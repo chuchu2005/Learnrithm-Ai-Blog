@@ -1,24 +1,46 @@
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="bg-gray-50 border-gray-100 border-t">
       <div className="container">
-        <div className="flex flex-col items-center py-28 lg:flex-row">
-          <h3 className="mb-10 text-center text-4xl font-bold leading-tight tracking-tighter lg:mb-0 lg:w-1/2 lg:pr-4 lg:text-left lg:text-5xl">
-            Built with Sanity + Next.js.
-          </h3>
-          <div className="flex flex-col gap-3 items-center justify-center lg:w-1/2 lg:flex-row lg:pl-4">
+        <div className="flex flex-col items-center py-16 lg:flex-row">
+          <div className="mb-10 lg:mb-0 lg:w-1/2 lg:pr-4">
+            <h3 className="text-center text-4xl font-bold leading-tight tracking-tighter lg:text-left lg:text-5xl">
+              Learning Doesn't Have To Be Hard
+            </h3>
+          </div>
+          
+          <div className="flex flex-col items-center lg:w-1/2 lg:pl-4">
             <a
-              href="https://github.com/sanity-io/sanity-template-nextjs-clean"
-              className="rounded-full flex gap-2 items-center bg-black hover:bg-red-500 focus:bg-cyan-500 py-3 px-6 text-white transition-colors duration-200"
+              href="https://app.learnrithm.com"
+              className="rounded-full flex gap-2 items-center bg-black hover:bg-blue-600 focus:bg-cyan-500 py-3 px-6 text-white transition-colors duration-200 mb-8"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View on GitHub
+              Try Learnrithm AI Now
             </a>
-            <a href="https://nextjs.org/docs" className="mx-3 hover:underline">
-              Read Next.js Documentation
-            </a>
+            
+            {/* Links section with border */}
+            <div className="border-t border-gray-200 pt-6 w-full max-w-xs">
+              <div className="flex flex-col items-center gap-4">
+                <a href="https://learnrithm.com/privacypolicy" className="hover:underline">
+                  Privacy Policy
+                </a>
+                <a href="https://learnrithm.com/refundpolicy" className="hover:underline">
+                  Refund Policy
+                </a>
+                <a href="https://learnrithm.com/requestdeletion.html" className="hover:underline">
+                  Request Deletion Of Data
+                </a>
+              </div>
+            </div>
           </div>
+        </div>
+        
+        {/* Copyright section */}
+        <div className="border-t border-gray-200 py-8 text-center text-sm text-gray-500">
+          &copy; {currentYear} Learnrithm AI. All rights reserved.
         </div>
       </div>
     </footer>
