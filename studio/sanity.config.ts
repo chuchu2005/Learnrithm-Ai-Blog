@@ -22,7 +22,7 @@ const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'srlvv0r2'
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'
 
 // URL for preview functionality, defaults to localhost:3000 if not set
-const SANITY_STUDIO_PREVIEW_URL = process.env.SANITY_STUDIO_PREVIEW_URL || 'https://blog.learnrithm.com/studio'
+const SANITY_STUDIO_PREVIEW_URL = process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000'
 
 // Define the home location for the presentation tool
 const homeLocation = {
