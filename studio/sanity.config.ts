@@ -46,8 +46,8 @@ function resolveHref(documentType?: string, slug?: string): string | undefined {
 
 // Main Sanity configuration
 export default defineConfig({
-  name: 'default',
-  title: 'Learnrithm Ai',
+  name: 'learnrithm-ai',
+  title: 'Learnrithm AI Blog Admin',
 
   projectId,
   dataset,
@@ -117,6 +117,7 @@ export default defineConfig({
     }),
     structureTool({
       structure, // Custom studio structure configuration, imported from ./src/structure.ts
+      title: 'Content',
     }),
     // Additional plugins for enhanced functionality
     unsplashImageAsset(),

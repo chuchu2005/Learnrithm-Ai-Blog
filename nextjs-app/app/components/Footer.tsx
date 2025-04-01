@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:w-1/2 lg:pl-4">
             <a
               href="https://app.learnrithm.com"
-              className="rounded-full flex gap-2 items-center bg-black hover:bg-blue-600 focus:bg-cyan-500 py-3 px-6 text-white transition-colors duration-200 mb-8"
+              className="rounded-full flex gap-2 items-center bg-black hover:bg-red-500 focus:bg-cyan-500 py-3 px-6 text-white transition-colors duration-200 mb-8"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -32,6 +32,9 @@ export default function Footer() {
                 </a>
                 <a href="https://learnrithm.com/requestdeletion.html" className="hover:underline">
                   Request Deletion Of Data
+                </a>
+                <a href="/contact" className="hover:underline">
+                  Contact Us
                 </a>
               </div>
             </div>

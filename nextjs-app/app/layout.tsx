@@ -26,8 +26,8 @@ export async function generateMetadata(): Promise<Metadata> {
     // Metadata should never contain stega
     stega: false,
   });
-  const title = settings?.title || demo.title;
-  const description = settings?.description || demo.description;
+  const title = settings?.title || "Learnrithm AI Blog";
+  const description = settings?.description || "Insights and updates from Learnrithm AI";
 
   const ogImage = resolveOpenGraphImage(settings?.ogImage);
   let metadataBase: URL | undefined = undefined;
@@ -41,10 +41,10 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase,
     title: {
-      template: `%s | ${title}`,
-      default: title,
+      template: `%s | Learnrithm AI Blog`,
+      default: "Learnrithm AI Blog",
     },
-    description: toPlainText(description),
+    description: typeof description === 'string' ? description : toPlainText(description),
     openGraph: {
       images: ogImage ? [ogImage] : [],
     },
@@ -80,7 +80,7 @@ export default async function RootLayout({
           {/* The <SanityLive> component is responsible for making all sanityFetch calls in your application live, so should always be rendered. */}
           <SanityLive onError={handleError} />
           <Header />
-          <main className="">{children}</main>
+          <main className="container mx-auto px-4">{children}</main>
           <Footer />
         </section>
         <SpeedInsights />
