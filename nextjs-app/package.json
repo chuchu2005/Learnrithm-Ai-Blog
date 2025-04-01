@@ -11,18 +11,19 @@
     "typegen": "sanity typegen generate"
   },
   "dependencies": {
-    "@sanity/client": "^6.27.2",
-    "@sanity/image-url": "^1.1.0",
+    "@sanity/client": "^6.12.3",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/preview-kit": "^1.0.17",
     "@sanity/uuid": "^3.0.2",
     "@tailwindcss/typography": "^0.5.16",
     "@vercel/speed-insights": "^1.1.0",
     "autoprefixer": "^10.4.20",
     "date-fns": "^3.6.0",
     "next": "14.1.0",
-    "next-sanity": "^9.8.42",
+    "next-sanity": "^7.0.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sanity": "^3.74.0",
+    "sanity": "^3.23.4",
     "sonner": "^1.7.0",
     "styled-components": "^6.1.13"
   },
